@@ -1,0 +1,25 @@
+    1  cd Desktop/Q\&A/GoIT/hw_git
+    2  git config --global user.name "roketbom"
+    3  git config --global user.email zp_nikitin@ukr.net
+    4  git clone https://github.com/rocketbom/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  nano .gitignore
+    8  git status
+    9  git add .
+   10  git commit -m 'init:change gitignore file'
+   11  touch main_test.txt
+   12  git add .
+   13  git commit -m 'init:create main_test.txt file'
+   14  git branch develop
+   15  git checkout develop
+   16  touch develop_test.txt
+   17  git add .
+   18  git commit -m 'init:create branch develop and create develop_test.txt file'
+   19  nano develop_test.txt
+   20  git status
+   21  git add .
+   22  git commit -m 'init:change develop_test.txt file'
+   23  git checkout main
+   24  git merge develop
+   25  git log
